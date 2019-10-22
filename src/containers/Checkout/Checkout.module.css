@@ -1,0 +1,22 @@
+.Checkout {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.DeliveryAndOrderSummaries {
+    flex-basis: 40%;
+    margin-left: 8%;
+    margin-right: 2%;
+}
+
+@media only screen and (max-width: 767px) {
+    .Checkout {
+        flex-direction: column;
+    }
+
+    .DeliveryAndOrderSummaries {
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,78 @@
+.Sidebar {
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 56px;
+    bottom: 112px;
+    left: 0;
+    overflow-x: hidden;
+    border-right: 1px solid black; 
+    background-color: rgba(204, 204, 204, 0.4);
+}
+
+.SidebarToggle {
+    display: none;
+}
+
+.Link {
+    padding: 0 15px;
+    color: #0F292F;
+    text-align: left;
+    font-size: 16px;
+    vertical-align: top;
+    margin-left: 23px;
+    text-indent: -23px;
+}
+
+.Required {
+    font-weight: bold;
+}
+
+.Link:hover {
+    color: #CB2D6F;
+    cursor: pointer;
+}
+
+.IconSelected, .IconNoSelection {
+    margin-right: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.IconNoSelection {
+    color: #cccccc;
+}
+
+.IconSelected {
+    color: #CB2D6F;
+}
+
+@media only screen and (max-width: 999px) {
+    .Sidebar {
+        left: -110px;
+        background-color: #eaeaea; 
+        transition: 0.3s;
+    }
+
+    .SidebarToggle {
+        display: inline-block;
+        width: 50px;
+        background-color: #eaeaea;
+        position: fixed;
+        z-index: 2;
+        top: 56px;
+        bottom: 112px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+    }
+
+    .SidebarToggle:hover ~ .Sidebar {
+        left: 50px;
+    }
+
+    .Sidebar:hover {
+        left: 50px;
+    }
+}

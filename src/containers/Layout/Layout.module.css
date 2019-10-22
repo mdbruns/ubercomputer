@@ -1,0 +1,14 @@
+.Content {
+    margin-top: 76px;
+    margin-bottom: 152px;
+}
+
+.AccountForSidebar {
+    margin-left: 160px;
+}
+
+@media only screen and (max-width: 999px) {
+    .AccountForSidebar {
+        margin-left: 50px;
+    }
+}

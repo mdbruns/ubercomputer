@@ -1,0 +1,131 @@
+.NavLinks {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    height: 100%;
+}
+
+.NavLinks li {
+    margin: 10px 0;
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+}
+
+.NavLinks li a {
+    color: #CB2D6F;
+    text-decoration: none;
+    width: 100%;
+    box-sizing: border-box;
+    display: block;
+}
+
+.NavLinks li a:hover, .NavLinks li a:active, .NavLinks li .active {
+    color: #cccccc;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 660px) {
+    .NavLinks {
+        flex-flow: row;
+    }
+    
+    .NavLinks li {
+        margin: 0;
+        display: flex;
+        height: 100%;
+        width: auto;
+        align-items: flex-start;
+    }
+
+    .NavLinks li a {
+        color: white;
+        height: 100%;
+    }
+    
+    .LoggedIn li a {
+        color: white;
+        height: 100%;
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .NotLoggedIn li a {
+        padding: 14px;
+    }
+    
+    .NavLinks li a:hover, .NavLinks li a:active, .NavLinks li a.active {
+        background-color: #14a098;
+        color: white;
+    }
+}
+
+@media only screen and (min-width: 661px) and (max-width: 816px) {
+    .NavLinks {
+        flex-flow: row;
+    }
+    
+    .NavLinks li {
+        margin: 0;
+        display: flex;
+        height: 100%;
+        width: auto;
+        align-items: flex-start;
+    }
+
+    .NavLinks li a {
+        color: white;
+        height: 100%;
+    }
+    
+    .LoggedIn li a {
+        color: white;
+        height: 100%;
+        padding: 8px 15px;
+    }
+
+    .NotLoggedIn li a {
+        padding: 15px;
+    }
+    
+    .NavLinks li a:hover, .NavLinks li a:active, .NavLinks li a.active {
+        background-color: #14a098;
+        color: white;
+    }
+}
+
+@media only screen and (min-width: 817px) {
+    .NavLinks {
+        flex-flow: row;
+    }
+    
+    .NavLinks li {
+        margin: 0;
+        display: flex;
+        height: 100%;
+        width: auto;
+        align-items: flex-start;
+    }
+
+    .NavLinks li a {
+        color: white;
+        height: 100%;
+    }
+    
+    .LoggedIn li a {
+        color: white;
+        height: 100%;
+        padding: 15px;
+    }
+
+    .NotLoggedIn li a {
+        padding: 15px;
+    }
+    
+    .NavLinks li a:hover, .NavLinks li a:active, .NavLinks li a.active {
+        background-color: #14a098;
+        color: white;
+    }
+}

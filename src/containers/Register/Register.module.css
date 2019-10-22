@@ -1,0 +1,32 @@
+.RegisterForm {
+    margin: 20px auto;
+    width: 60%;
+    text-align: center;
+    box-shadow: 0 2px 3px #0F292F;
+    border: 1px solid #cccccc;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.ErrorMessage {
+    font-weight: bold;
+    color: red;
+}
+
+@media only screen and (max-width: 999px) {
+    .RegisterForm {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .RegisterForm {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 499px) {
+    .RegisterForm {
+        width: 90%;
+    }
+}

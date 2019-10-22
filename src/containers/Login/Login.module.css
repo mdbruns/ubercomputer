@@ -1,0 +1,49 @@
+.LoginForm {
+    margin: 20px auto;
+    width: 60%;
+    text-align: center;
+    box-shadow: 0 2px 3px #0F292F;
+    border: 1px solid #cccccc;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.ErrorMessage {
+    font-weight: bold;
+    color: red;
+}
+
+.SuccessMessage {
+    font-weight: bold;
+    color: rgb(20, 160, 152);
+}
+
+.ForgotPasswordLink {
+    padding: 10px 0;   
+}
+
+.ForgotPasswordLink a {
+   font-size: 18px;
+}
+
+.ForgotPasswordLink a:hover, .ForgotPasswordLink a:focus {
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 999px) {
+    .LoginForm {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .LoginForm {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 499px) {
+    .RegisterForm {
+        width: 90%;
+    }
+}

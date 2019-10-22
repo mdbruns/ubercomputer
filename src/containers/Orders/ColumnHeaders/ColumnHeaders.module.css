@@ -1,0 +1,50 @@
+.ColumnHeaders {
+    display: flex;
+    justify-content: space-around;
+    font-weight: bolder;
+    margin-bottom: 10px;
+}
+
+.OrderNumber, .OrderDate, .Status, .ReadyForDeliveryBy, .Total {
+    font-size: 20px;
+    margin: 0 2%;
+    text-align: left;
+}
+
+.OrderNumber {
+    flex-basis: 20%;
+}
+
+.OrderDate {
+    flex-basis: 15%;
+}
+
+.Status {
+    flex-basis: 15%;
+}
+
+.ReadyForDeliveryBy {
+    flex-basis: 20%;
+}
+
+.Total {
+    flex-basis: 10%;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 768px) {
+    .OrderNumber, .OrderDate, .Status, .ReadyForDeliveryBy, .Total {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 400px) and (max-width: 499px) {
+    .OrderNumber, .OrderDate, .Status, .ReadyForDeliveryBy, .Total {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 399px) {
+    .OrderNumber, .OrderDate, .Status, .ReadyForDeliveryBy, .Total {
+        font-size: 14px;
+    }
+}

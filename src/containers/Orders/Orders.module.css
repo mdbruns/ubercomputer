@@ -1,0 +1,21 @@
+.Orders {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.PageHeader {
+    text-align: left;
+    font-size: 36px;
+    font-weight: bolder;
+}
+
+.SelectedOrderDetails {
+    width: 85%;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 499px) {
+    .Orders {
+        width: 92%;
+    }
+}

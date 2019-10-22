@@ -1,0 +1,102 @@
+.Part {
+    flex-basis: 12%;
+    margin: 0 1% 20px 1%;
+    border: 2px solid #CCCCCC;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.Part:hover {
+    cursor: pointer;
+    border: 2px solid #CB2D6F;
+    box-shadow: 0 3px 4px #501F3A;
+}
+
+.Selected {
+    border: 2px solid #CB2D6F;
+    box-shadow: 0 3px 4px #501F3A;
+}
+
+.PriceTab {
+    width: 100%;
+    background-color: #CCCCCC;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.Selected .PriceTab {
+    background-color: rgba(203, 45, 111, 0.1);
+}
+
+.Icon {
+    color: white;
+    font-weight: normal;
+}
+
+.Selected .Icon, .Selected span {
+    color: #CB2D6F;
+}
+
+.Image {
+    width: 80%;
+    height: 140px;
+    display: block;
+    margin: 10px auto 0;
+}
+
+.TextWrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100px;
+    overflow: auto;
+}
+
+.PartName {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px;
+    margin: auto 0;
+}
+
+@media only screen and (max-width: 499px) {
+    .Part {
+        flex-basis: 98%;
+    }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 799px) {
+    .Part {
+        flex-basis: 47%;
+        margin: 0 1.5% 20px 1.5%;
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1099px) {
+    .Part {
+        flex-basis: 31%;
+    }
+}
+
+@media only screen and (min-width: 1100px) and (max-width: 1399px) {
+    .Part {
+        flex-basis: 23%;
+    }
+}
+
+@media only screen and (min-width: 1400px) and (max-width: 1799px) {
+    .Part {
+        flex-basis: 18%;
+    }
+}
+
+@media only screen and (min-width: 1800px) and (max-width: 2199px) {
+    .Part {
+        flex-basis: 14%;
+    }
+}

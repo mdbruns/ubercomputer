@@ -1,0 +1,29 @@
+.Heading {
+    border-bottom: 1px solid #14A098;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    padding-bottom: 20px;
+    text-align: left;
+    font-size: 20px;
+}
+
+.SummaryBlock {
+    margin-bottom: 40px;
+}
+
+.SummaryBlock p {
+    margin: 4px 0;
+    text-align: left;
+    padding: 0 10px;
+}
+
+.EditIcon {
+    font-weight: normal;
+    margin-left: 10px;
+}
+
+.EditIcon:hover {
+    color: #CB2D6F;
+    cursor: pointer;
+}

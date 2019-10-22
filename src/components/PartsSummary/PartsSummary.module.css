@@ -1,0 +1,26 @@
+.PartsSummary {
+    flex-basis: 50%;
+    overflow: auto;
+}
+
+.SummaryRow {
+    border-top: 1px solid #CB2D6F;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Category {
+    font-weight: bold;
+}
+
+.Text {
+    text-align: left;
+    margin-right: 30px;
+}
+
+.Price {
+    font-weight: 600;
+}

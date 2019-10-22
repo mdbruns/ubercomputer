@@ -1,0 +1,68 @@
+.Order {
+    border-top: 1px solid #14A098;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.Order:last-child {
+    border-bottom: 1px solid #14A098;
+    margin-bottom: 60px;
+}
+
+.Selected {
+    background-color: rgba(20, 160, 152, 0.5);
+    border-top: 1px solid #0F292F;
+}
+
+.Order:hover:not(.Selected) {
+    background-color: rgba(20, 160, 152, 0.2);
+}
+
+.Order:hover {
+    cursor: pointer;
+}
+
+.OrderNumber, .OrderDate, .Status, .ReadyForDeliveryBy, .Total {
+    font-size: 20px;
+    margin: 0 2%;
+    text-align: left;
+}
+
+.OrderNumber {
+    flex-basis: 20%;
+}
+
+.OrderDate {
+    flex-basis: 15%;
+}
+
+.Status {
+    flex-basis: 15%;
+}
+
+.ReadyForDeliveryBy {
+    flex-basis: 20%;
+}
+
+.Total {
+    flex-basis: 10%;
+}
+
+@media only screen and (min-width: 500px) and (max-width: 768px) {
+    .OrderNumber, .OrderDate, .Status, .ReadyForDeliveryBy, .Total {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 499px) {
+    .OrderNumber, .OrderDate, .Status, .ReadyForDeliveryBy, .Total {
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 399px) {
+    .OrderNumber, .OrderDate, .Status, .ReadyForDeliveryBy, .Total {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,41 @@
+.Footer {
+    background-color: #0F292F;
+    color: #CCCCCC;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 112px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.Hide {
+    display: none;
+}
+
+.Subtotal {
+    display: inline;
+    font-size: 20px;
+    font-weight: normal;
+    display: flex;
+    align-items: center; 
+    margin-left: 10px;
+}
+
+.PriceAmount {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+@media only screen and (max-width: 499px) {
+    .PriceAmount {
+        font-size: 20px;
+    }
+
+    .Subtotal {
+        font-size: 16px;
+    }
+}

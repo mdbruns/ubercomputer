@@ -1,0 +1,24 @@
+.OrderSummary {
+    background-color: #501F3A;
+    color: white;
+    padding: 30px;
+    margin-top: 30px;
+    border-radius: 15px;
+}
+
+.Heading {
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.SummaryRow {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.SummaryRow:last-of-type {
+    font-weight: bold;
+}

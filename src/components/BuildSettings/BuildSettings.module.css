@@ -1,0 +1,44 @@
+.BuildSettings {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto 20px;
+}
+
+.Heading {
+    flex-basis: 100%;
+    margin: 10px auto;
+    font-size: 32px;
+    border-bottom: 1px solid rgba(20, 160, 152, 1);
+    padding-bottom: 15px;
+}
+
+.Setting {
+    flex-basis: 28%;
+    margin: 0 2.5%;
+}
+
+.SettingDescription {
+    font-size: 18px;
+    font-style: italic;
+}
+
+.Icon {
+    font-size: 20px;
+    margin-right: 8px;
+}
+
+@media only screen and (max-width: 767px) {
+    .Setting {
+        flex-basis: 100%;
+        margin: 0 0 15px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1158px) {
+    .Setting {
+        flex-basis: 45%;
+        margin-bottom: 15px;
+    }
+}

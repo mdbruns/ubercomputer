@@ -1,0 +1,12 @@
+.Options {
+    width: 85%;
+    margin: 0 auto 20px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.Hidden {
+    margin-bottom: 0;
+}

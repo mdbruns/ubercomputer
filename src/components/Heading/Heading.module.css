@@ -1,0 +1,63 @@
+.Heading {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: baseline;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    border-top: 1px solid #14A098;
+    color: black;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.Hidden {
+    background-color: rgba(20, 160, 152, 0.2);
+}
+
+.Text {
+    font-size: 20px;
+    text-overflow: ellipsis;
+    flex-basis: 73%;
+    text-align: left;
+}
+
+.Title {
+    font-weight: bold;
+}
+
+.HideOptionsToggle {
+    display: inline-block;
+    width: 90px;
+    margin-right: 20px;
+    background-color: #501F3A;
+    color: white;
+    padding: 15px;
+    border-radius: 5px 10px 15px 20px;
+}
+
+.OptionalDisplay {
+    margin-left: 7%;
+    flex-basis: 10%;
+}
+
+@media only screen and (max-width: 768px) {
+    .Heading {
+        flex-direction: column-reverse;
+        align-items: center;
+        padding-top: 10px;
+    }
+    .Text {
+        margin-top: 0px;
+        text-align: center;
+    }
+    .HideOptionsToggle {
+        margin-top: 0px;
+        margin-right: 0px;
+    }
+
+    .OptionalDisplay {
+        margin-left: 0;
+    }
+}

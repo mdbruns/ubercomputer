@@ -1,0 +1,24 @@
+.Message {
+    width: 90%;
+    padding: 10px;
+    text-align: left;
+    margin: 20px auto;
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.Success {
+    background-color: rgba(20, 160, 152, 0.7);
+}
+
+.Failure {
+    background-color: rgba(203, 45, 111, 0.8)
+}
+
+.Icon {
+    margin-right: 20px;
+    margin-left: 20px;
+    font-size: 24px;
+}

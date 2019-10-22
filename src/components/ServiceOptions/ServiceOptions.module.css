@@ -1,0 +1,54 @@
+.Heading {
+    border-bottom: 1px solid #14A098;
+    padding: 0 10px 20px;
+    text-align: left;
+    font-size: 20px;
+}
+
+.ServiceOption {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 10px;
+    border-bottom: 1px solid transparent;
+}
+
+.ServiceOption:first-of-type {
+    margin-bottom: 10px;
+}
+
+.ServiceOption:not(.Selected):hover {
+    cursor: pointer;
+    border-bottom: 1px solid #14A098;
+}
+
+.ServiceName {
+    text-align: left;
+    font-weight: bold;
+}
+
+.ServiceDescription {
+    margin-left: 25px;
+    text-align: left;
+}
+
+.Icon {
+    margin-right: 8px;
+    color: white;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+}
+
+.Price {
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.Selected {
+    background-color: rgba(20, 160, 152, 0.2); 
+    border-radius: 10px;
+}
+
+.Selected div p .Icon {
+    border: 1px solid #14A098;
+    background-color: #14A098;
+}
