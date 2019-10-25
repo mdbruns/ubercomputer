@@ -4,6 +4,7 @@
     border: 2px solid #CCCCCC;
     box-sizing: border-box;
     position: relative;
+    font-family: Trebuchet MS, sans-serif;
 }
 
 .Part:hover {

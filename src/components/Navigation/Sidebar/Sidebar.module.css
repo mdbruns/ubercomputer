@@ -1,5 +1,5 @@
 .Sidebar {
-    width: 160px;
+    width: 170px;
     position: fixed;
     z-index: 1;
     top: 56px;
@@ -22,6 +22,7 @@
     vertical-align: top;
     margin-left: 23px;
     text-indent: -23px;
+    font-family: Trebuchet MS, sans-serif;
 }
 
 .Required {
@@ -49,7 +50,7 @@
 
 @media only screen and (max-width: 999px) {
     .Sidebar {
-        left: -110px;
+        left: -120px;
         background-color: #eaeaea; 
         transition: 0.3s;
     }
