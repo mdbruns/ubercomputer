@@ -26,7 +26,7 @@ function sidebar(props) {
     return (
         <div>
             <div className={classes.SidebarToggle}>
-                <FontAwesomeIcon icon={faChevronRight}/>
+                <FontAwesomeIcon icon={faChevronRight} className={classes.Chevron}/>
             </div>
             <div className={classes.Sidebar}>
                 <h3>Jump To</h3>

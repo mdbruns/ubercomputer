@@ -39,3 +39,9 @@
         font-size: 16px;
     }
 }
+
+@media only screen and (max-height: 500px) {
+    .Footer { 
+        height: 90px;
+    }
+}

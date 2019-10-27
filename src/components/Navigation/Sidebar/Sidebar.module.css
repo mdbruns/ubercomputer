@@ -6,12 +6,16 @@
     bottom: 112px;
     left: 0;
     overflow-x: hidden;
-    border-right: 1px solid black; 
+    border-right: 1px solid #0F292F; 
     background-color: rgba(204, 204, 204, 0.4);
 }
 
 .SidebarToggle {
     display: none;
+}
+
+.Chevron {
+    color: #0F292F;
 }
 
 .Link {
@@ -75,5 +79,15 @@
 
     .Sidebar:hover {
         left: 50px;
+    }
+}
+
+@media only screen and (max-height: 500px) {
+    .Sidebar {
+        bottom: 90px;
+    }
+
+    .SidebarToggle {
+        bottom: 90px;
     }
 }
