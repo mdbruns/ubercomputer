@@ -72,7 +72,7 @@ class Orders extends Component {
         this.setState({loading: true});
         this.props.onSetCancellingStateFalse();
 
-        axios.delete(`http://localhost:8080/ubercomputer_rest_api/api/orders/${this.state.selectedOrderId}/${this.props.userData.id}`, {
+        axios.delete(`https://ubercomputer-server.herokuapp.com/api/orders/${this.state.selectedOrderId}/${this.props.userData.id}`, {
             headers: {
                 "Authorization": `Bearer ${this.props.token}`
             }})
