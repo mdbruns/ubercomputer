@@ -26,7 +26,7 @@ class Orders extends Component {
     };
 
     componentDidMount() {
-        axios.get(`https://ubercomputer-server.herokuapp.com/api/orders/${this.state.selectedOrderId}/${this.props.userData.id}`, {
+        axios.get(`https://ubercomputer-server.herokuapp.com/api/orders/${this.props.userData.id}`, {
             headers: {
                 "Authorization": `Bearer ${this.props.token}`
             }})
