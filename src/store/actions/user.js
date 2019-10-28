@@ -110,6 +110,8 @@ export function authenticateFromLocalStorage() {
 }
 
 function updateUserDetailsSuccess(updatedUserData) {
+    localStorage.setItem("userData",JSON.stringify(updatedUserData));
+
     return {
         type: actionTypes.UPDATE_USER_DETAILS_SUCCESS,
         updatedUserData: updatedUserData
