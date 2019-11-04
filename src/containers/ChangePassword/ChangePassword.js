@@ -106,7 +106,7 @@ class Register extends Component {
                     phoneNumber: this.props.userData.phoneNumber
                 };
     
-                axios.put(`https://ubercomputer-server.herokuapp.com/api/users/password/${this.props.userData.id}`, updatedUserData, {
+                axios.put(`${process.env.REACT_APP_API_URL}/users/password/${this.props.userData.id}`, updatedUserData, {
                     headers: {
                         "Authorization": `Bearer ${this.props.token}`
                     }})
@@ -127,7 +127,7 @@ class Register extends Component {
                     password: this.state.registerForm.password.value
                 };
                 
-                axios.put(`https://ubercomputer-server.herokuapp.com/api/users/reset/${params.tokenId}/${params.token}`, updatedUserData)
+                axios.put(`${process.env.REACT_APP_API_URL}/users/reset/${params.tokenId}/${params.token}`, updatedUserData)
                     .then(response => {
                         this.props.history.push("/login/reset-success");
                     })

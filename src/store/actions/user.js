@@ -26,10 +26,10 @@ export function asyncAuthenticate(authData, isLoggingIn, history, redirectPath) 
     return function(dispatch) {
         dispatch(authenticateLoading());
 
-        let url = "https://ubercomputer-server.herokuapp.com/api/users/signup";
+        let url = `${process.env.REACT_APP_API_URL}/users/signup`;
         
         if (isLoggingIn) {
-            url = "https://ubercomputer-server.herokuapp.com/api/users/login";
+            url = `${process.env.REACT_APP_API_URL}/users/login`;
         }
 
         axios.post(url, authData)
@@ -129,7 +129,7 @@ export function asyncUpdateAccountDetails(userId, updatedUserData, token, histor
     return function(dispatch) {
         dispatch(authenticateLoading());
 
-        axios.put(`https://ubercomputer-server.herokuapp.com/api/users/contact/${userId}`, updatedUserData, {
+        axios.put(`${process.env.REACT_APP_API_URL}/users/contact/${userId}`, updatedUserData, {
             headers: {
                 "Authorization": `Bearer ${token}`
             }})

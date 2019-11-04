@@ -26,7 +26,7 @@ class Orders extends Component {
     };
 
     componentDidMount() {
-        axios.get(`https://ubercomputer-server.herokuapp.com/api/orders/${this.props.userData.id}`, {
+        axios.get(`${process.env.REACT_APP_API_URL}/orders/${this.props.userData.id}`, {
             headers: {
                 "Authorization": `Bearer ${this.props.token}`
             }})
@@ -72,7 +72,7 @@ class Orders extends Component {
         this.setState({loading: true});
         this.props.onSetCancellingStateFalse();
 
-        axios.delete(`https://ubercomputer-server.herokuapp.com/api/orders/${this.state.selectedOrderId}/${this.props.userData.id}`, {
+        axios.delete(`${process.env.REACT_APP_API_URL}/orders/${this.state.selectedOrderId}/${this.props.userData.id}`, {
             headers: {
                 "Authorization": `Bearer ${this.props.token}`
             }})

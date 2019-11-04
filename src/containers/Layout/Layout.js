@@ -70,7 +70,7 @@ class Layout extends Component {
             deadlineForReadyForDelivery.setDate(deadlineForReadyForDelivery.getDate() + 14);
         }
 
-        axios.post("https://ubercomputer-server.herokuapp.com/api/orders", {
+        axios.post(`${process.env.REACT_APP_API_URL}/orders`, {
             expressService: this.props.expressService,
             isCrossfireSLISystem: this.props.isCrossfireSLICompatibleSystem,
             subtotal: this.props.subtotal,

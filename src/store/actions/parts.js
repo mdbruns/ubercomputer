@@ -37,7 +37,7 @@ function setSelectionsFromLocalStorage(selections) {
 export function asyncInitializeParts() {
     return function(dispatch) {
         dispatch(initializePartsLoading());
-        axios.get("https://ubercomputer-server.herokuapp.com/api/parts")
+        axios.get(`${process.env.REACT_APP_API_URL}/parts`)
             .then(response => {
                 dispatch(initializePartsSuccess(response.data));
                 dispatch(loadSelectionsFromLocalStorage());

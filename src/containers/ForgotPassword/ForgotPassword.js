@@ -73,7 +73,7 @@ class ForgotPassword extends Component {
         event.preventDefault();
         this.setState({loading: true});
         
-        axios.post("https://ubercomputer-server.herokuapp.com/api/users/forgot", {email: this.state.loginForm.email.value})
+        axios.post(`${process.env.REACT_APP_API_URL}/users/forgot`, {email: this.state.loginForm.email.value})
             .then(response => {
                 this.setState({loading: false, hasError: false, message: "Success! Click the link in your email to continue the password reset process. This tab will automatically redirect to the home page in 30 seconds."});
                 setTimeout(() => this.props.history.push("/"), 30000);
